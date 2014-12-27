@@ -14,6 +14,7 @@ nunjucks.configure('views', {
 	autoescape: true,
 	express: app
 });
+app.set('view engine', 'nunjucks');
 
 // Routes setup
 app.use('/', routes);
